@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jai Mata Trading</title>
+    <style>
+        /* Basic Reset */
+        body, h1, p, ul, li, img {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            vertical-align: baseline;
+        }
+        /* Typography */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #e8f5e9; /* Soft green background */
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            background-color: #388e3c; /* Dark green for header */
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            max-height: 60px;
+            position: absolute;
+            left: 50%;
+            top: 10px;
+            transform: translateX(-50%); /* Center the logo horizontally */
+        }
+        h1 {
+            margin-top: 60px; /* Make space for the logo */
+            font-size: 24px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        img.full-width {
+            width: 32%; /* Adjust width to fit three images */
+            height: auto;
+            margin-top: 20px;
+            object-fit: cover; /* Ensure images cover the area well */
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #388e3c; /* Same as header */
+            color: white;
+            position: relative; /* Adjusted for mobile */
+            bottom: 0;
+            width: 100%;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header, footer {
+                text-align: center;
+            }
+            header img {
+                position: static;
+                margin: 0 auto;
+                display: block;
+                transform: none;
+                top: 0;
+            }
+            h1 {
+                margin-top: 20px;
+            }
+            nav ul {
+                padding: 0;
+            }
+            nav ul li {
+                display: block;
+                text-align: center;
+                margin-top: 10px;
+            }
+            .image-row {
+                flex-direction: column;
+            }
+            img.full-width {
+                width: 100%; /* Full width for smaller devices */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./logo.png" alt="Jai Mata Trading Logo">
+        <h1>Welcome to Jai Mata Trading</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Your Reliable Partner in Agro-Trade</h2>
+            <p>We specialize in the buying and selling of wheat, maize, and other grains.</p>
+            <div class="image-row">
+                <img src="./image_grain_1.jpeg" alt="Grain Image 1" class="full-width">
+                <img src="./image_grain_2.jpeg" alt="Grain Image 2" class="full-width">
+                <img src="./image_grain_3.jpeg" alt="Grain Image 3" class="full-width">
+            </div>
+        </section>
+        <section>
+            <h2>100T Dharam Kanta</h2>
+            <p>Our 100-tonne Dharam Kanta is available for weighing all types of vehicles.</p>
+            <div class="image-row">
+                <img src="./image_dharamkanta_1.png" alt="Dharam Kanta 1" class="full-width">
+                <img src="./image_dharamkanta_2.png" alt="Dharam Kanta 2" class="full-width">
+                <img src="./image_dharamkanta_3.jpeg" alt="Dharam Kanta 3" class="full-width">
+            </div>
+        </section>
+        <section>
+            <h2>Wholesale Fruits and Vegetables</h2>
+            <p>Reach out to us for bulk purchases of fresh fruits and vegetables at competitive prices.</p>
+            <div class="image-row">
+                <img src="./image_fruit_veg_1.jpeg" alt="Fruits and Vegetables 1" class="full-width">
+                <img src="./image_fruit_veg_2.jpeg" alt="Fruits and Vegetables 2" class="full-width">
+                <img src="./image_fruit_veg_3.jpeg" alt="Fruits and Vegetables 3" class="full-width">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Jai Mata Trading. All rights reserved.</p>
+    </footer>
+</body>
+</html>
